@@ -93,7 +93,7 @@ else  {
 */	
 mysqli_stmt_execute($stmt);
 
-	header("Location:Landing_Page.html?signupsuccess");
+	header("Location:Profile.php?signupsuccess");
 	exit();		
 			 
 		}
