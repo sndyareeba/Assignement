@@ -44,7 +44,7 @@ else
 		
 			 $check = password_verify($pass , $row['Password']);
 				if ($check == false){
-					header("Location: User_Access.php 	error=wrongpassword");
+					header("Location: User_Access.php?error=wrongpassword");
 			
 				exit();
 				}
@@ -55,7 +55,7 @@ else
 			
 			$_SESSION['Username'] = $row['Username'];
 				
-		header("Location: Main_Site.php?loginsuccessful");
+		header("Location: Profile.php?loginsuccessful");
 		exit();
 		}
 			 
