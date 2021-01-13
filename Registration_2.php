@@ -32,7 +32,8 @@ header("Location:User_Access.php?error=emptyfields&Username".$User."&mail.".$Use
 															exit();
 			}
 	
-	/*
+	
+			/*
 else if(!preg_match(" /^[a-zA-A0-9]*$/",$User)){
 		
 		header("Location: User_Access.php ?error=invalidemail&user_id".$UserEmail);
